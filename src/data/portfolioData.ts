@@ -123,7 +123,7 @@ export const projects: Project[] = [
     description: 'Developed and deployed an end-to-end NLP microservice for real-time sentiment analysis using a CNN-based model with over 85 % accuracy, integrated with explainable AI (XAI) techniques to generate interpretable predictions',
     image: sentiment,
     tags: ['NLP', 'XAI', 'CNN', 'TensorFlow'],
-    demoLink: '#',
+    demoLink: 'https://sensenseai.netlify.app/',
     codeLink: 'https://github.com/Templar121/Sentiment-API',
   },
   // {
