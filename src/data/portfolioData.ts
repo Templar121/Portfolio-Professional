@@ -1,13 +1,13 @@
 import { NavItem, SocialLink, AcademicProfile, TechStack, Project, Achievement, Publication, Certification } from '../types';
-import myphoto from '../images/myphoto.jpg';
-import deeplearning from '../images/deep-learning.jpg';
-import ml from '../images/ml.jpg';
-import nlp from '../images/nlp.jpg';
-import ds from '../images/ds.jpg';
-import python from '../images/python.jpg';
-import llm from '../images/llm.jpg';
-import sentiment from '../images/Sentiment.png';
-import footprint from '../images/footprint.png';
+import myphoto from '../images/myphoto.webp';
+import deeplearning from '../images/deep-learning.webp';
+import ml from '../images/ml.webp';
+import nlp from '../images/nlp.webp';
+import ds from '../images/ds.webp';
+import python from '../images/python.webp';
+import llm from '../images/llm.webp';
+import sentiment from '../images/Sentiment.webp';
+import footprint from '../images/footprint.webp';
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
