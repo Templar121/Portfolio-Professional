@@ -22,7 +22,7 @@ export const navItems: NavItem[] = [
 export const socialLinks: SocialLink[] = [
   { platform: 'GitHub', url: 'https://github.com/Templar121', icon: 'Github' },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/subhayan-mukherjee-0906b0274/', icon: 'Linkedin' },
-  { platform: 'Twitter', url: 'https://twitter.com/subhayanm', icon: 'Twitter' },
+  { platform: 'Twitter', url: '#', icon: 'Twitter' },
   { platform: 'Email', url: 'subhayanmukherjee78@gmail.com', icon: 'Mail' },
 ];
 
