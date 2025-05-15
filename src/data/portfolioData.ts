@@ -48,7 +48,7 @@ export const personalInfo = {
   about: 'Passionate Machine Learning Engineer with a strong foundation in deep learning, computer vision, and natural language processing. Focused on building practical and scalable AI solutions that address real-world challenges across diverse domains. Continuously exploring innovative approaches to enhance model performance and interpretability.',
   location: 'Asansol, India',
   email: 'subhayanmukherjee78@gmail.com',
-  resumeUrl: 'https://drive.google.com/file/d/1VIsPNR0iw5tKsDOXmvJARW3c5OLtIyPi/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/drive/folders/1dYOve0gIcjA3YVLZJ3IC0jFNeX1t5b5O',
   image: myphoto,
 };
 
