@@ -12,21 +12,22 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 py-12 relative overflow-hidden" id="contact">
       <div className="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-800 [mask-image:linear-gradient(0deg,white,transparent)] dark:[mask-image:linear-gradient(0deg,black,transparent)]"></div>
-      <div className="container mx-auto px-4 md:px-6 relative">
-        <div className="grid md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="text-center md:text-left"
           >
             <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-4">Contact</h3>
-            <p className="text-slate-600 dark:text-slate-300 mb-4">{personalInfo.about}</p>
+            <p className="text-slate-600 dark:text-slate-300 mb-4 text-sm sm:text-base">{personalInfo.about}</p>
             <div className="flex flex-col space-y-2">
-              <p className="text-slate-600 dark:text-slate-300">
+              <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base">
                 <span className="font-medium">Location:</span> {personalInfo.location}
               </p>
-              <p className="text-slate-600 dark:text-slate-300">
+              <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base break-words">
                 <span className="font-medium">Email:</span>{' '}
                 <a
                   href={`mailto:${personalInfo.email}`}
@@ -43,13 +44,14 @@ const Footer: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-center md:text-left"
           >
             <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-4">Quick Links</h3>
             <ul className="grid grid-cols-2 gap-2">
               <li>
                 <a
                   href="#home"
-                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base"
                 >
                   Home
                 </a>
@@ -57,7 +59,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#projects"
-                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base"
                 >
                   Projects
                 </a>
@@ -65,7 +67,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#publications"
-                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base"
                 >
                   Publications
                 </a>
@@ -73,7 +75,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="#certifications"
-                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm sm:text-base"
                 >
                   Certifications
                 </a>
@@ -86,9 +88,10 @@ const Footer: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-center md:text-left"
           >
             <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-4">Connect</h3>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
               {socialLinks.map((link, index) => (
                 <motion.a
                   key={index}
@@ -113,7 +116,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="border-t border-slate-200 dark:border-slate-700/50 mt-10 pt-6 text-center"
         >
-          <p className="text-slate-500 dark:text-slate-400">
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
         </motion.div>
