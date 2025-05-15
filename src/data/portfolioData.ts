@@ -172,7 +172,7 @@ export const publications: Publication[] = [
   {
     id: '1',
     title: 'Artificial Intelligence powered chatbots for the speech disabled and hearing impaired using Feedforward Neural Network',
-    authors: ['Mukherjee S, Chatterjee A, Chandrakar K, Saxena S.'],
+    authors: ['S Mukherjee, A Chatterjee, K Chandrakar, S Saxena .'],
     journal: '1st International Conference on Advances in Computing, Communication and Networking (ICAC2N)',
     year: '2025',
     doi: 'https://doi.org/10.1109/icac2n63387.2024.10894803',
