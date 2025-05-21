@@ -8,6 +8,7 @@ import python from '../images/python.webp';
 import llm from '../images/llm.webp';
 import sentiment from '../images/Sentiment.webp';
 import footprint from '../images/footprint.webp';
+import indianprices from '../images/indian prices.webp';
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
@@ -108,15 +109,15 @@ export const projects: Project[] = [
     demoLink: 'https://carbonfootprintemission.netlify.app/',
     codeLink: 'https://github.com/Templar121/Carbon-Footprint-estimation',
   },
-  // {
-  //   id: '2',
-  //   title: 'Medical Image Classification',
-  //   description: 'Built a convolutional neural network model to diagnose lung diseases from X-ray images with 94% accuracy, trained on a dataset of 100,000+ images.',
-  //   image: 'https://images.pexels.com/photos/4226264/pexels-photo-4226264.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   tags: ['Computer Vision', 'CNN', 'TensorFlow', 'Healthcare'],
-  //   demoLink: 'https://demo.example.com/medical-image-classifier',
-  //   codeLink: 'https://github.com/subhayanmukherjee/medical-image-classifier',
-  // },
+  {
+    id: '2',
+    title: 'Indian Housing Rent Prediction',
+    description: 'Developed a machine learning model using CatBoost and Scikit-Learn to predict rental prices in Indian cities based on features like location, size, and amenities. Achieved R2 Score of 0.95 on a dataset of 15,000+ records.',
+    image: indianprices,
+    tags: ['CatBoost', 'Scikit Learn', 'Real Estate', 'Regression'],
+    demoLink: 'https://india-rental-prices.netlify.app/',
+    codeLink: 'https://github.com/Templar121/Indian-Housing-Prices-Backend/tree/main',
+  },
   {
     id: '3',
     title: 'SenSense.AI',
