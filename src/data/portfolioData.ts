@@ -141,13 +141,20 @@ export const projects: Project[] = [
 export const achievements: Achievement[] = [
   {
     id: '1',
+    title: 'NPTEL Star',
+    issuer: 'NPTEL IIT Madras',
+    date: 'June 2025',
+    description: 'Recognized as an NPTEL Discipline Star and Believer Star for completing 68 Weeks of learning',
+  },
+  {
+    id: '2',
     title: 'Delegate at Harvard Project for Asian and International Relations 2024',
     issuer: 'Harvard University',
     date: 'August 2024',
     description: 'Selected as one of the few Indian delegates for the HPAIR Asia Conference held at Chulalongkorn University, Thailand',
   },
   {
-    id: '2',
+    id: '3',
     title: 'Smart India Hackathon 2023 Finalist',
     issuer: 'Government of India',
     date: 'December 2023',
