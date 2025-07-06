@@ -9,6 +9,7 @@ import llm from '../images/llm.webp';
 import sentiment from '../images/Sentiment.webp';
 import footprint from '../images/footprint.webp';
 import indianprices from '../images/indian prices.webp';
+import DocuSage from "../images/DocuSage.png";
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#home' },
@@ -127,15 +128,15 @@ export const projects: Project[] = [
     demoLink: 'https://sensenseai.netlify.app/',
     codeLink: 'https://github.com/Templar121/Sentiment-API',
   },
-  // {
-  //   id: '4',
-  //   title: 'Reinforcement Learning for Robotics',
-  //   description: 'Implemented reinforcement learning algorithms to train robot arms for complex pick-and-place tasks, improving efficiency by 42%.',
-  //   image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   tags: ['Reinforcement Learning', 'Robotics', 'Simulation', 'Python'],
-  //   demoLink: 'https://demo.example.com/rl-robotics',
-  //   codeLink: 'https://github.com/subhayanmukherjee/rl-robotics',
-  // },
+  {
+  id: '4',
+  title: 'DocuSage: Conversational RAG System for PDFs',
+  description: 'Built a responsive frontend and intelligent backend for document-based conversations using Retrieval-Augmented Generation (RAG). Users can upload PDFs and interact with them using natural language queries, powered by vector search and LLMs.',
+  image: DocuSage,
+  tags: ['RAG', 'LLM', 'PDF Chat'],
+  demoLink: 'https://rag-docusage.netlify.app/',
+  codeLink: 'https://github.com/Templar121/RAG-API',
+}
 ];
 
 export const achievements: Achievement[] = [
