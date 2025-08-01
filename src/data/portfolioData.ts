@@ -50,7 +50,7 @@ export const personalInfo = {
   about: 'Passionate Machine Learning Engineer with a strong foundation in deep learning, computer vision, and natural language processing. Focused on building practical and scalable AI solutions that address real-world challenges across diverse domains. Continuously exploring innovative approaches to enhance model performance and interpretability.',
   location: 'Asansol, India',
   email: 'subhayanmukherjee78@gmail.com',
-  resumeUrl: 'https://drive.google.com/drive/folders/1dYOve0gIcjA3YVLZJ3IC0jFNeX1t5b5O',
+  resumeUrl: 'https://drive.google.com/file/d/1FEHPp1mg9GIYXK4yu9NfcLp7xfYw75Ww/view?usp=sharing',
   image: myphoto,
 };
 
@@ -74,7 +74,6 @@ export const techStacks: TechStack[] = [
       { name: 'R', proficiency: 3 },
       { name: 'SQL', proficiency: 3 },
       { name: 'Java', proficiency: 3 },
-      { name: 'C', proficiency: 3 },
     ],
   },
   {
@@ -187,15 +186,15 @@ export const publications: Publication[] = [
     doi: 'https://doi.org/10.1109/icac2n63387.2024.10894803',
     link: 'https://ieeexplore.ieee.org/abstract/document/10894803',
   },
-  // {
-  //   id: '2',
-  //   title: 'Novel Approaches to Federated Learning in Resource-Constrained Environments',
-  //   authors: ['Mukherjee, S.', 'Chen, L.'],
-  //   journal: 'Transactions on Neural Networks and Learning Systems',
-  //   year: '2022',
-  //   doi: '10.1109/TNNLS.2022.54321',
-  //   link: 'https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385',
-  // },
+  {
+    id: '2',
+    title: 'A Mixture of Experts approach for Morgan - Keenan Spectral classification of Gaia DR2 Stars',
+    authors: ['S Mukherjee, B Tewari, P Mukherjee'],
+    journal: '17th International Conference on Contemporary Computing (IC3-2025)',
+    year: '2025',
+    doi: 'To Be Published',
+    link: 'Coming Soon...',
+  },
   // {
   //   id: '3',
   //   title: 'Efficient Model Compression Techniques for Edge AI Applications',
