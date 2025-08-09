@@ -106,7 +106,7 @@ export const projects: Project[] = [
     description: 'Developed a machine learning system that predicts carbon footprint emissions created by individuals. It has the potential to drive meaningful behavior and reduce global carbon emissions',
     image: footprint,
     tags: ['Machine Learning', 'AI for Good', 'Prediction Systems'],
-    demoLink: 'https://carbonfootprintemission.netlify.app/',
+    demoLink: 'https://carbonfootprint.subhayanmukherjee.tech/',
     codeLink: 'https://github.com/Templar121/Carbon-Footprint-estimation',
   },
   {
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     description: 'Developed a machine learning model using CatBoost and Scikit-Learn to predict rental prices in Indian cities based on features like location, size, and amenities. Achieved R2 Score of 0.95 on a dataset of 15,000+ records.',
     image: indianprices,
     tags: ['CatBoost', 'Scikit Learn', 'Real Estate', 'Regression'],
-    demoLink: 'https://india-rental-prices.netlify.app/',
+    demoLink: 'https://indiarental.subhayanmukherjee.tech/',
     codeLink: 'https://github.com/Templar121/Indian-Housing-Prices-Backend/tree/main',
   },
   {
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     description: 'Developed and deployed an end-to-end NLP microservice for real-time sentiment analysis using a CNN-based model with over 85 % accuracy, integrated with explainable AI (XAI) techniques to generate interpretable predictions',
     image: sentiment,
     tags: ['NLP', 'XAI', 'CNN', 'TensorFlow'],
-    demoLink: 'https://sensenseai.netlify.app/',
+    demoLink: 'https://sensenseai.subhayanmukherjee.tech/',
     codeLink: 'https://github.com/Templar121/Sentiment-API',
   },
   {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
   description: 'Built a responsive frontend and intelligent backend for document-based conversations using Retrieval-Augmented Generation (RAG). Users can upload PDFs and interact with them using natural language queries, powered by vector search and LLMs.',
   image: DocuSage,
   tags: ['RAG', 'LLM', 'PDF Chat'],
-  demoLink: 'https://rag-docusage.netlify.app/',
+  demoLink: 'https://docusage.subhayanmukherjee.tech/',
   codeLink: 'https://github.com/Templar121/RAG-API',
 }
 ];
