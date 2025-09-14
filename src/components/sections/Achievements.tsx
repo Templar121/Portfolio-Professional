@@ -5,7 +5,15 @@ import { motion } from 'framer-motion';
 
 const Achievements: React.FC = () => {
   return (
-    <section id="achievements" className="py-20 bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
+    <section id="achievements" className="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(45deg, transparent 40%, rgba(59, 130, 246, 0.1) 50%, transparent 60%)`,
+          backgroundSize: '20px 20px'
+        }}></div>
+      </div>
+      
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -13,17 +21,17 @@ const Achievements: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Achievements
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Recognition and milestones in my professional journey.
           </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400"></div>
+            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
 
             {achievements.map((achievement, index) => (
               <motion.div 
@@ -39,7 +47,7 @@ const Achievements: React.FC = () => {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.4, delay: index * 0.2 + 0.3 }}
-                  className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-400 dark:to-purple-400 flex items-center justify-center shadow-lg"
+                  className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg border-2 border-gray-800"
                 >
                   <Trophy size={20} className="text-white" />
                 </motion.div>
@@ -49,21 +57,21 @@ const Achievements: React.FC = () => {
                 }`}>
                   <motion.div 
                     whileHover={{ scale: 1.02 }}
-                    className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 p-6 rounded-xl shadow-xl hover:shadow-2xl hover:border-blue-500/30 transition-all duration-300"
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex-1">
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                        <h3 className="text-xl font-bold text-white mb-2">
                           {achievement.title}
                         </h3>
-                        <div className="flex items-center text-sm text-slate-500 dark:text-slate-400 mb-3">
-                          <span className="font-medium text-blue-600 dark:text-blue-400">
+                        <div className="flex items-center text-sm text-gray-400 mb-3">
+                          <span className="font-medium text-blue-400">
                             {achievement.issuer}
                           </span>
                           <span className="mx-2">•</span>
                           <span>{achievement.date}</span>
                         </div>
-                        <p className="text-slate-600 dark:text-slate-400">
+                        <p className="text-gray-300">
                           {achievement.description}
                         </p>
                       </div>

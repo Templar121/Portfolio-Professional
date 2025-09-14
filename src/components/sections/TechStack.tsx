@@ -10,7 +10,15 @@ const TechStack: React.FC = () => {
   };
 
   return (
-    <section id="tech-stack" className="py-20 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+    <section id="tech-stack" className="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+          backgroundSize: '20px 20px'
+        }}></div>
+      </div>
+      
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -18,10 +26,10 @@ const TechStack: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Tech Stack
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             My toolkit for building intelligent systems and solving complex problems.
           </p>
         </motion.div>
@@ -33,13 +41,13 @@ const TechStack: React.FC = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: stackIndex * 0.1 }}
-              className="relative"
+              className="relative bg-gray-900/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-800"
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="p-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 dark:from-blue-400 dark:to-indigo-400 text-white">
+                <div className="p-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg">
                   <DynamicIcon name={getIconForCategory(stack.category)} />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-white">
+                <h3 className="text-2xl font-bold text-white">
                   {stack.category}
                 </h3>
               </div>
@@ -51,29 +59,29 @@ const TechStack: React.FC = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: skillIndex * 0.1 }}
-                    className="relative group"
+                    className="relative group bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300"
                   >
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <span className="text-lg font-medium text-slate-700 dark:text-slate-300">
+                        <span className="text-lg font-medium text-gray-200">
                           {skill.name}
                         </span>
                       </div>
                       <motion.span 
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        className="text-sm font-medium px-3 py-1 rounded-full bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 text-blue-700 dark:text-blue-400"
+                        className="text-sm font-medium px-3 py-1 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-400 border border-blue-500/30"
                       >
                         {getProficiencyLabel(skill.proficiency)}
                       </motion.span>
                     </div>
                     
-                    <div className="relative h-2 bg-gradient-to-r from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-600 rounded-full overflow-hidden">
+                    <div className="relative h-2 bg-gray-700 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${(skill.proficiency / 5) * 100}%` }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        className="absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400"
+                        className="absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg"
                       />
                     </div>
                     
@@ -81,7 +89,7 @@ const TechStack: React.FC = () => {
                       initial={{ scale: 0.8, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.3 }}
-                      className="absolute -right-2 -top-2 w-1 h-1 rounded-full bg-blue-500 dark:bg-blue-400 opacity-0 group-hover:opacity-100"
+                      className="absolute -right-2 -top-2 w-2 h-2 rounded-full bg-blue-400 opacity-0 group-hover:opacity-100 shadow-lg"
                     />
                   </motion.div>
                 ))}

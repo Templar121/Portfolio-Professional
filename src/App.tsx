@@ -17,7 +17,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white transition-colors duration-300">
+      <div className="min-h-screen bg-black text-white">
         <Navbar />
         <main>
           <Hero />

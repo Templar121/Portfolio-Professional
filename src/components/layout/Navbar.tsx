@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-md py-2' 
+          ? 'bg-black/90 backdrop-blur-md shadow-lg border-b border-gray-800 py-2' 
           : 'bg-transparent py-3'
       }`}
     >
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           {/* Logo/Name */}
           <a 
             href="#home" 
-            className="text-lg sm:text-xl font-bold text-blue-600 dark:text-blue-400 flex items-center space-x-2 min-w-0"
+            className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent flex items-center space-x-2 min-w-0"
           >
             <span className="truncate">Subhayan Mukherjee</span>
           </a>
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 <li key={index}>
                   <a
                     href={item.href}
-                    className="px-3 py-2 text-sm font-medium rounded-md text-slate-700 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-200 dark:hover:text-blue-400 dark:hover:bg-slate-800 transition-colors"
+                    className="px-3 py-2 text-sm font-medium rounded-md text-gray-300 hover:text-blue-400 hover:bg-gray-900/50 transition-colors"
                   >
                     {item.label}
                   </a>
@@ -62,11 +62,11 @@ const Navbar: React.FC = () => {
             </ul>
             <button
               onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
+              className="ml-4 p-2 rounded-full bg-gray-900/50 hover:bg-gray-800/70 border border-gray-700 transition-colors"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               {theme === 'light' ? (
-                <Moon size={20} className="text-slate-700" />
+                <Moon size={20} className="text-gray-300" />
               ) : (
                 <Sun size={20} className="text-yellow-400" />
               )}
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center md:hidden gap-2">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md bg-blue-50 hover:bg-blue-100 text-blue-600 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-blue-400 transition-colors"
+              className="p-2 rounded-md bg-gray-900/50 hover:bg-gray-800/70 text-blue-400 border border-gray-700 transition-colors"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -88,24 +88,24 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white dark:bg-slate-900 md:hidden">
-          <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-700">
-            <span className="text-lg font-bold text-slate-900 dark:text-white">Menu</span>
+        <div className="fixed inset-0 z-50 bg-black md:hidden">
+          <div className="flex items-center justify-between p-4 border-b border-gray-800">
+            <span className="text-lg font-bold text-white">Menu</span>
             <div className="flex items-center gap-2">
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors"
+                className="p-2 rounded-full bg-gray-900/50 hover:bg-gray-800/70 border border-gray-700 transition-colors"
                 aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
               >
                 {theme === 'light' ? (
-                  <Moon size={20} className="text-slate-700" />
+                  <Moon size={20} className="text-gray-300" />
                 ) : (
                   <Sun size={20} className="text-yellow-400" />
                 )}
               </button>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="p-2 rounded-md bg-blue-50 hover:bg-blue-100 text-blue-600 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-blue-400 transition-colors"
+                className="p-2 rounded-md bg-gray-900/50 hover:bg-gray-800/70 text-blue-400 border border-gray-700 transition-colors"
                 aria-label="Close menu"
               >
                 <X size={24} />
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="px-4 py-3 text-lg font-medium rounded-lg text-slate-700 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-200 dark:hover:text-blue-400 dark:hover:bg-slate-800 transition-colors"
+                  className="px-4 py-3 text-lg font-medium rounded-lg text-gray-300 hover:text-blue-400 hover:bg-gray-900/50 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
